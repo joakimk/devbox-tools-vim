@@ -1,4 +1,4 @@
-Vim plugin for [devbox-tools](https://github.com/joakimk/devbox-tools-vim).
+Vim plugin for [devbox-tools](https://github.com/joakimk/devbox-tools).
 
 ### Credits and license
 
