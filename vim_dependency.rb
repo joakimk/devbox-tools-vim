@@ -18,7 +18,7 @@ class VimDependency < SystemSoftwareDependency
   end
 
   def required_packages
-    %w{ build-essential libncurses5-dev ruby1.8-dev }
+    %w{ build-essential libncurses5-dev ruby-dev }
   end
 
   def default_version
