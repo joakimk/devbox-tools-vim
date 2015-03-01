@@ -11,7 +11,11 @@ class VimDependency < SystemSoftwareDependency
       tar xvfj vim-#{version}.tar.bz2
       echo "#{checksum}  vim-#{version}.tar.bz2" | md5sum -c -
       cd vim73
+
+      # Restrict paths so that only system ruby is available
+      export PATH=/usr/sbin:/usr/bin:/sbin:/bin
       ./configure --prefix=#{install_prefix} --with-features=huge --enable-rubyinterp=yes
+
       make -j 2
       make install
     }
